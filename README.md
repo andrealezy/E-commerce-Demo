@@ -38,7 +38,7 @@ O projeto segue uma organização em camadas para facilitar manutenção e escal
 3-modules → Componentes reutilizáveis
 
 ## ▶️ Como Clonar o Projeto
-git clone https://github.com/seu-usuario/e-commerce-demo.git
+git clone https://github.com/andrealezy/e-commerce-demo.git
 cd e-commerce-demo
 
 2️⃣ Instalar o SASS (caso não tenha)
