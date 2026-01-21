@@ -1,0 +1,51 @@
+@use '../1-base/variables'
+@use '../1-base/base-mixins'
+@use 'layout-mixins'
+
+.newsletter-container
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 3rem
+  border-top: 2px solid variables.$section-bg-color
+
+  @include base-mixins.mobile
+    text-align: center
+
+  h2
+    font-size: 2rem
+    color: variables.$dark-color
+    margin-bottom: 2rem 
+
+    span
+      font-size: 2rem
+      font-weight: bold
+        
+  form
+    display: flex
+    margin-bottom: 3rem
+
+    @include base-mixins.mobile
+      width: 100%
+
+    input[type="email"]
+      border: solid 1px variables.$section-bg-color
+
+      @include base-mixins.mobile
+        width: 100%
+
+  .social-media
+
+    i
+      padding: 12px
+      margin: 5px
+      border: solid 1px variables.$section-bg-color
+      color: variables.$link-color
+      transition: .4s 
+
+      &:hover
+        color: variables.$primary-color
+        border: solid 1px variables.$primary-color
+
+    
